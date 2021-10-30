@@ -11,7 +11,16 @@
     $credit = 1000;
 
     echo "<h1>Welcome to ".$name."!</h1>";
-    echo "<h2>You have £".$credit." in your pocket.</h2>"
+    echo "<h2>You have £".$credit." in your pocket.</h2>";
+
+    $products['computer'] = 750;
+    $products['car'] = 15000;
+    $products['iPhone'] = 1000;
+    $products['Toaster'] = 75;
+
+    foreach($products as $key => $value){
+      echo "<p>A ".$key." costs £".$value.".</p>";
+    }
     ?>
   </body>
 </html>
